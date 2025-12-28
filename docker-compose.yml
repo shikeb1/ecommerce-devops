@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.9" 
 
 services:
   frontend:
@@ -38,5 +38,5 @@ services:
       - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
 
 volumes:
-  postgress_data:
+  postgres_data:
       
