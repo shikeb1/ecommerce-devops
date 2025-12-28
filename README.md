@@ -17,7 +17,7 @@ This project is built to **learn and demonstrate real DevOps practices** startin
 - Microservices architecture
 - API Gateway pattern
 
-This is **not a toy project**, this is how a **3–5 year DevOps engineer** structures and explains a project.
+
 
 ---
 
@@ -34,13 +34,6 @@ Backend Microservices
 ↓
 PostgreSQL Database (Persistent Volume)
 
-### Why 3-Tier?
-- Separation of concerns
-- Independent scaling
-- Security & maintainability
-- Industry standard architecture
-
----
 
 ## 📁 Project Directory Structure
 
@@ -144,7 +137,7 @@ docker stop container
 
 🐳 PART 4 — DOCKERFILE (MULTI-STAGE BUILD)
 
-Why Multi-Stage Build?
+
 	•	Smaller image size
 	•	Faster deployment
 	•	No dev dependencies in production
@@ -177,7 +170,7 @@ RUN	Execute commands
 
 🐳 PART 5 — DOCKER COMPOSE (ORCHESTRATION)
 
-Why Docker Compose?
+
 	•	Run multiple containers together
 	•	Single command startup
 	•	Automatic networking
@@ -225,7 +218,7 @@ Explanation
       - postgres_data:/var/lib/postgresql/data
       - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
 
-Why Volumes?
+ Volumes
 	•	Data persistence
 	•	Containers can be deleted safely
 	•	Mandatory in production
